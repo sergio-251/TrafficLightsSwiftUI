@@ -12,6 +12,7 @@
 		B7ADB51B27860C1700A19D16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7ADB51A27860C1700A19D16 /* Assets.xcassets */; };
 		B7ADB51E27860C1700A19D16 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7ADB51D27860C1700A19D16 /* Preview Assets.xcassets */; };
 		B7ADB52527860C8500A19D16 /* LightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ADB52427860C8500A19D16 /* LightView.swift */; };
+		B7ADB5292786D69B00A19D16 /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ADB5282786D69B00A19D16 /* StartButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		B7ADB51A27860C1700A19D16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7ADB51D27860C1700A19D16 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B7ADB52427860C8500A19D16 /* LightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightView.swift; sourceTree = "<group>"; };
+		B7ADB5282786D69B00A19D16 /* StartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				B7ADB51627860C1400A19D16 /* TrafficLightsSwiftUIApp.swift */,
 				B7ADB51827860C1400A19D16 /* ContentView.swift */,
+				B7ADB5282786D69B00A19D16 /* StartButton.swift */,
 				B7ADB52427860C8500A19D16 /* LightView.swift */,
 				B7ADB51A27860C1700A19D16 /* Assets.xcassets */,
 				B7ADB51C27860C1700A19D16 /* Preview Content */,
@@ -142,6 +145,7 @@
 			files = (
 				B7ADB51927860C1400A19D16 /* ContentView.swift in Sources */,
 				B7ADB52527860C8500A19D16 /* LightView.swift in Sources */,
+				B7ADB5292786D69B00A19D16 /* StartButton.swift in Sources */,
 				B7ADB51727860C1400A19D16 /* TrafficLightsSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

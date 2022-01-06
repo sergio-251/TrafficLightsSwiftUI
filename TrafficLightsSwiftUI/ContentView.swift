@@ -12,31 +12,22 @@ struct ContentView: View {
     
     @State private var nextColor: Color = .red
     
-    @State private var redColor = LightView(color: .red)
-    @State private var yellowColor = LightView(color: .yellow)
-    @State private var greenColor = LightView(color: .green)
-    
-    private var button: some View {
-        Button(action: { isPressed() }) {
-            Text(name)
-                .font(.title)
-                .foregroundColor(.white)
-                .frame(width: 150, height: 40)
-                .background(.blue)
-                .cornerRadius(20)
-        }
-    }
+    @State private var isOnRed = false
+    @State private var isOnYellow = false
+    @State private var isOnGreen = false
     
     var body: some View {
         ZStack {
             Color(.black)
                 .ignoresSafeArea()
             VStack {
-                redColor
-                yellowColor
-                greenColor
+                LightView(color: .red, isOn: isOnRed)
+                LightView(color: .yellow, isOn: isOnYellow)
+                LightView(color: .green, isOn: isOnGreen)
                 Spacer()
-                button
+                StartButton {
+                    isPressed()
+                }
             }
             .padding()
         }
@@ -47,16 +38,16 @@ struct ContentView: View {
         switch nextColor {
         case .red:
             nextColor = .yellow
-            redColor.isOn = true
-            greenColor.isOn = false
+            isOnRed = true
+            isOnGreen = false
         case .yellow:
             nextColor = .green
-            yellowColor.isOn = true
-            redColor.isOn = false
+            isOnYellow = true
+            isOnRed = false
         default:
             nextColor = .red
-            greenColor.isOn = true
-            yellowColor.isOn = false
+            isOnGreen = true
+            isOnYellow = false
         }
     }
 }

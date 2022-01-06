@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LightView: View {
     let color: Color
-    var isOn: Bool = false
+    var isOn: Bool
     
     private var opacity: Double {
         isOn ? 1.0 : 0.3
@@ -27,6 +27,6 @@ struct LightView: View {
 
 struct LightView_Previews: PreviewProvider {
     static var previews: some View {
-        LightView(color: .red)
+        LightView(color: .red, isOn: true)
     }
 }
