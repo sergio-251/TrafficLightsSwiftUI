@@ -25,7 +25,7 @@ struct ContentView: View {
                 LightView(color: .yellow, isOn: isOnYellow)
                 LightView(color: .green, isOn: isOnGreen)
                 Spacer()
-                StartButton {
+                StartButton(name: name) {
                     isPressed()
                 }
             }
