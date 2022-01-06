@@ -17,9 +17,7 @@ struct ContentView: View {
     @State private var greenColor = LightView(color: .green)
     
     private var button: some View {
-        Button {
-            isPressed()
-        } label: {
+        Button(action: { isPressed() }) {
             Text(name)
                 .font(.title)
                 .foregroundColor(.white)
