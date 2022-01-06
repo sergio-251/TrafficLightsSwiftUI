@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct StartButton: View {
-    let name = "Start"
+    var name: String
     let isPressed: () -> Void
     
     var body: some View {
@@ -25,6 +25,6 @@ struct StartButton: View {
 
 struct StartButton_Previews: PreviewProvider {
     static var previews: some View {
-        StartButton(isPressed: {})
+        StartButton(name: "Start", isPressed: {})
     }
 }
